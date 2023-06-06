@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film</title>
+</head>
+<body>
+    <header>API films Netflix <img src="images/logoAPI.png" alt="logo du site"/> </header> 
+
+    <p id="news"> </p>
+
+    <div class="search-wrapper">
+        <li><label for="yearsearchbar">Year Search</label></li>
+            <li><select name="yearsfilter" id="years"></li>
+                <option value=""> -- Choose movie year -- </option>
+                <option value="2020">2020's</option>
+                <option value="2010">2010's</option>
+                <option value="2000">2000's</option>
+                <option value="1990">1990's</option>
+                <option value="1980">1980's</option>
+                <option value="1970">1970's</option>
+                <option value="1960">1960's</option>
+                <option value="1950">1950's</option>
+                </select>
+        <li><label for="countrysearchbar">Country Search</label></li>
+            <li><input type="text" id="countrysearchbar" value=""></li>
+        <li><label for="genresfilter">Genres Filter</label></li>
+            <li><select name="genres" id="genresfilter"></li>
+                <option value=""> -- Choose movie genre -- </option>
+                <option value="Dramas">Dramas</option>
+                <option value="Comedie">Comedies</option>
+                <option value="Documentaries">Documentaries</option>
+                <option value="Action & Adventure">Action & Adventure</option>
+                <option value="Children & Family">Children & Family</option>
+                <option value="Classic">Classic</option>
+                <option value="Horror">Horror</option>
+                <option value="Music">Music</option>
+                <option value="Romantic">Romantic</option>
+                <option value="Sci-fi & Fantasy">Sci-fi & Fantasy</option>
+                <option value="Sports">Sports</option>
+                <option value="Thrillers">Thrillers</option>
+                <option value="TV Shows">TV Shows</option>
+            </select>
+        <li><label for="directorsearchbar">Director Search</label></li>
+            <li><input type="text" id="directorsearchbar" value=""></li>
+        <li><button type="submit" id="validationYears" value="click">Search</button></li>
+            <button onClick="window.location.reload();">New Search</button>
+        <li><label for="filmresults">Movies matching your search</label></li>
+        <table id="filmresults"></table>
+            
+    </div>      
+    <script src="api.js"></script>
+</body>
+</html>
